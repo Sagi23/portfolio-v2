@@ -3,15 +3,15 @@ import styled from "styled-components";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { Tween } from "react-gsap";
 
-const DarkToggle = ({ themeToggler }) => {
+const DarkToggle = ({ themeToggler, theme }) => {
   return (
     <Container>
       <Tween from={{ y: "200px" }} delay={2} opacity={0} duration={0.2}>
         <FixedLine />
       </Tween>
       <Tween from={{ y: "50px" }} delay={2.5} opacity={0} duration={0.2}>
-        <SunIcon>
-          <BsSun onClick={() => themeToggler()} />
+        <SunIcon onClick={() => themeToggler()}>
+          {theme === "dark" ? <BsSun /> : <BsMoon />}
         </SunIcon>
       </Tween>
     </Container>
@@ -32,7 +32,6 @@ const SunIcon = styled.div`
   bottom: 420px;
   right: 2.3rem;
   font-size: 25px;
-  color: ${({ theme }) => theme.fontColor};
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.headerColor};

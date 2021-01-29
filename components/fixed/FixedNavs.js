@@ -4,10 +4,10 @@ import Navbar from "./Navbar";
 import Rights from "./Rights";
 import SocialLinks from "./SocialLinks";
 
-const FixedNavs = ({ themeToggler }) => {
+const FixedNavs = ({ themeToggler, theme }) => {
   return (
     <>
-      <DarkToggle themeToggler={themeToggler} />
+      <DarkToggle themeToggler={themeToggler} theme={theme} />
       <Navbar />
       <Rights />
       <SocialLinks />

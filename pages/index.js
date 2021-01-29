@@ -3,6 +3,7 @@ import { useState } from "react";
 import { lightTheme, darkTheme, GlobalStyles } from "../styles/theme";
 import { ThemeProvider } from "styled-components";
 import FixedNavs from "../components/fixed/FixedNavs";
+import Hero from "../components/Hero";
 
 export default function Home() {
   const [theme, setTheme] = useState("dark");
@@ -18,7 +19,8 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <FixedNavs themeToggler={themeToggler} />
+      <FixedNavs themeToggler={themeToggler} theme={theme} />
+      <Hero />
     </ThemeProvider>
   );
 }
