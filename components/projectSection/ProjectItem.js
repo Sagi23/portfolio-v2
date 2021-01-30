@@ -84,6 +84,7 @@ const DescriptionContainer = styled.div`
 const Description = styled.p`
   font-size: 25px;
   text-align: right;
+  line-height: 1.5;
   @media ${mediaQueries.mid} {
     text-align: center;
   }

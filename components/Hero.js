@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { gsap } from "gsap";
 import styled from "styled-components";
+import { Tween } from "react-gsap";
 
 const Hero = () => {
   const scroller = useRef(null);
@@ -14,31 +15,35 @@ const Hero = () => {
   }, []);
 
   return (
-    <Container>
-      <Ibuild>I Build</Ibuild>
-      <CangingWords>
-        <Typewriter
-          options={{ loop: true }}
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("Reliable")
-              .pauseFor(2500)
-              .deleteAll()
-              .typeString("Beautiful")
-              .pauseFor(2500)
-              .deleteAll()
-              .typeString("Performant")
-              .pauseFor(2500)
-              .deleteAll()
-              .start();
-          }}
-        />
-        <WebApp>Web Applications</WebApp>
-        <ScroolDown ref={scroller}>
-          <BsChevronDoubleDown />
-        </ScroolDown>
-      </CangingWords>
-    </Container>
+    <Tween opacity={0} delay={3}>
+      <Container>
+        <Ibuild>I Build</Ibuild>
+        <CangingWords>
+          <Typewriter
+            options={{ loop: true }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Reliable")
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString("Beautiful")
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString("Performant")
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+            }}
+          />
+          <WebApp>Web Applications</WebApp>
+          <ScroolDown ref={scroller}>
+            <a href="#project">
+              <BsChevronDoubleDown />
+            </a>
+          </ScroolDown>
+        </CangingWords>
+      </Container>
+    </Tween>
   );
 };
 

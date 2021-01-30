@@ -11,7 +11,8 @@ const techData = [
   { id: 10, title: "Photoshop", image: "/photoshop.svg" },
   { id: 11, title: "Git", image: "/git.svg" },
   { id: 12, title: "GitHub", image: "/github.svg" },
-  { id: 13, title: "Material-ui", image: "/material-ui.svg" },
+  { id: 13, title: "GreenSock", image: "/greenSock.png" },
+  { id: 14, title: "Material-ui", image: "/material-ui.svg" },
 ];
 
 export default techData;

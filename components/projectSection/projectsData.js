@@ -3,7 +3,7 @@ const projectsData = [
     id: 1,
     title: "Country & Covid Tracker",
     description:
-      "Country & Covid Tracker is a website that lets you find real live data (covid and non-covid related) about the country you are in and countries you love.",
+      "Country & Covid Tracker is a website that lets you find real live daily data (covid and non-covid related) about the country you live in and countries you love.",
     tags: [
       "react",
       "next.js",
@@ -21,17 +21,17 @@ const projectsData = [
     id: 2,
     title: "Perfect Plate",
     description:
-      "Perfect plate is a website that lets you calculate the nutrions value of any given food.",
+      "Perfect plate is a website that lets you calculate the nutrition value of any given food and create yout own plate with all the nutrition data.",
     tags: ["react", "sass", "API", "adobe-xd", "axios"],
     demo: "https://perfect-plate.netlify.app/",
-    github: "https://perfect-plate.netlify.app/",
+    github: "https://github.com/Sagi23/perfect-plate-v2",
     image: "/perfect-plate-min.png",
   },
   {
     id: 3,
     title: "Devjobs",
     description:
-      "Devjobs is a website that lets you search for a tech job by title of the job, location and more.",
+      "Devjobs is a website that lets you search for a tech job by the title of the job, location and more.",
     tags: ["html", "sass", "js", "API", "adobe-xd", "axios"],
     demo: "https://dev-search-jobs.netlify.app/",
     github: "https://github.com/Sagi23/github-jobs",
@@ -41,10 +41,10 @@ const projectsData = [
     id: 4,
     title: "Ip-Tracker",
     description:
-      "Ip-Tracker is a website that lets you find the location of any ip address and present it for you on the map.",
+      "IP-Tracker is a website that lets you find the location of any ip address and present it for you on interactive map.",
     tags: ["html", "sass", "js", "API", "adobe-xd", "axios"],
-    demo: "https://shortly-url-shortening.netlify.app/",
-    github: "https://github.com/Sagi23/url-shortener",
+    demo: "https://ip-tracker-site.netlify.app/",
+    github: "https://github.com/Sagi23/ip-address-tracker",
     image: "/ip-tracker-min.png",
   },
 ];
