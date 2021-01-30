@@ -12,7 +12,6 @@ const MobileSocial = () => {
           href="https://github.com/Sagi23"
           target="_blank"
           rel="noreferrer noopener"
-          aria-describedby="linkedin-link"
         >
           <AiOutlineGithub />
         </a>
@@ -22,7 +21,6 @@ const MobileSocial = () => {
           href="https://www.linkedin.com/in/sagi-twig/"
           target="_blank"
           rel="noreferrer noopener"
-          aria-describedby="linkedin-link"
         >
           <FaLinkedinIn />
         </a>
