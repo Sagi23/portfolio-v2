@@ -34,7 +34,7 @@ const Hero = () => {
           }}
         />
       </CangingWords>
-      <WebApp>Web Applications</WebApp>
+      <StyledP>Web Applications</StyledP>
       <ScroolDown ref={scroller}>
         <BsChevronDoubleDown />
       </ScroolDown>
@@ -42,9 +42,16 @@ const Hero = () => {
   );
 };
 
-const WebApp = styled.p`
+const Webapp = styled.p`
   font-weight: 700;
-  font-size: 6.1rem;
+  font-size: 6rem;
+  text-align: end;
+  font-size: 5vw;
+`;
+
+const StyledP = styled.p`
+  font-weight: 700;
+  font-size: 6rem;
   text-align: end;
   font-size: 5vw;
 `;
@@ -66,7 +73,7 @@ const ScroolDown = styled.div`
 `;
 
 const Ibuild = styled.p`
-  font-size: 6.1rem;
+  font-size: 6rem;
   margin-bottom: 3rem;
   font-weight: 700;
   font-size: 5vw;
