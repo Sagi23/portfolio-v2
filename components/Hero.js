@@ -27,9 +27,11 @@ const Hero = () => {
 };
 
 const Container = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 60%;
-  margin: 10rem auto 0;
+  margin: 0 auto 0;
   height: 100vh;
 `;
 
@@ -44,19 +46,21 @@ const WebApp = styled.p`
   font-weight: 700;
   font-size: 6rem;
   text-align: end;
-  margin-top: 6rem;
+  font-size: 5vw;
 `;
 
 const Ibuild = styled.p`
   font-size: 6rem;
   margin-bottom: 3rem;
   font-weight: 700;
+  font-size: 5vw;
 `;
 
 const CangingWords = styled.p`
   font-size: 9rem;
   text-align: center;
   margin-bottom: 3rem;
+  font-size: 10vw;
 `;
 
 export default Hero;

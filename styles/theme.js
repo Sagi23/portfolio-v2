@@ -11,6 +11,21 @@ export const darkTheme = {
   headerColor: "#449ddb",
 };
 
+export const mediaQueries = {
+  md: `(max-width: 900px)`,
+  lg: `(min-width: 900px)`,
+};
+
+export const displayin = {
+  display: "block",
+  noDisplay: "none",
+};
+
+export const noDisplayin = {
+  display: "none",
+  noDisplay: "none",
+};
+
 export const GlobalStyles = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');html,
