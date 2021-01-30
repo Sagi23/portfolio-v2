@@ -75,13 +75,7 @@ const NavbarContainer = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-`;
-
-const Ul = styled.ul`
-  position: relative;
-  list-style: none;
-  display: flex;
-  gap: 3rem;
+  z-index: 60;
 `;
 
 const Li = styled.li`

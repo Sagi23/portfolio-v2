@@ -3,7 +3,6 @@ import ProjectItem from "./ProjectItem";
 import projectsData from "./projectsData";
 
 const ProjectList = () => {
-  console.log(projectsData);
   const renderdList = projectsData.map((project) => (
     <ProjectItem
       title={project.title}
@@ -16,7 +15,7 @@ const ProjectList = () => {
     />
   ));
 
-  return <div>{renderdList}</div>;
+  return renderdList;
 };
 
 export default ProjectList;

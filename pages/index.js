@@ -6,7 +6,8 @@ import FixedMobile from "../components/mobileNav/FixedMobile";
 import FixedNavs from "../components/fixed/FixedNavs";
 import Hero from "../components/Hero";
 import Projects from "../components/projectSection/Projects";
-
+import About from "../components/aboutSection/About";
+import Form from "../components/contactSection/Form";
 export default function Home() {
   const [theme, setTheme] = useState("dark");
 
@@ -25,6 +26,8 @@ export default function Home() {
       <FixedMobile themeToggler={themeToggler} theme={theme} />
       <Hero />
       <Projects />
+      <About />
+      <Form />
     </ThemeProvider>
   );
 }

@@ -55,6 +55,7 @@ const ImgContainer = styled.div`
   display: flex;
   @media ${mediaQueries.mid} {
     max-width: 100%;
+    justify-content: center;
   }
 `;
 

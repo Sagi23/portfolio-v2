@@ -17,7 +17,7 @@ const Projects = () => {
 const HeadTitle = styled.p`
   font-size: 4vw;
   text-align: center;
-  @media ${mediaQueries.mid} {
+  @media ${mediaQueries.md} {
     font-size: 10vw;
   }
 `;
@@ -27,10 +27,8 @@ const HeadBlue = styled.span`
 `;
 
 const Container = styled.div`
-  margin-top: 10rem;
-  height: 100vh;
   width: 60%;
-  margin: 0 auto;
+  margin: 10rem auto 0;
   @media ${mediaQueries.mid} {
     width: 70%;
     margin-top: 7rem;
