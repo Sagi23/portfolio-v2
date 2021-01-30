@@ -44,7 +44,7 @@ const Hero = () => {
 
 const WebApp = styled.p`
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 6.1rem;
   text-align: end;
   font-size: 5vw;
 `;
@@ -66,7 +66,7 @@ const ScroolDown = styled.div`
 `;
 
 const Ibuild = styled.p`
-  font-size: 6rem;
+  font-size: 6.1rem;
   margin-bottom: 3rem;
   font-weight: 700;
   font-size: 5vw;
