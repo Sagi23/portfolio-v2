@@ -14,13 +14,29 @@ const SocialLinks = () => {
       <Tween from={{ y: "-50px" }} delay={2.5} opacity={0} duration={0.2}>
         <Ul>
           <Li>
-            <AiOutlineGithub />
+            <a
+              href="https://github.com/Sagi23"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-describedby="linkedin-link"
+            >
+              <AiOutlineGithub />
+            </a>
           </Li>
           <Li>
-            <FaLinkedinIn />
+            <a
+              href="https://www.linkedin.com/in/sagi-twig/"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-describedby="linkedin-link"
+            >
+              <FaLinkedinIn />
+            </a>
           </Li>
           <Li>
-            <IoIosMail />
+            <a href="#contact">
+              <IoIosMail />
+            </a>
           </Li>
         </Ul>
       </Tween>

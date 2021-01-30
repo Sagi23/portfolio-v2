@@ -14,7 +14,7 @@ const ProjectItem = ({ title, description, tags, demo, github, image }) => {
           href={demo}
           target="_blank"
           rel="noreferrer noopener"
-          aria-details="demo-link"
+          aria-describedby="demo-link"
         >
           <Image src={image} alt={title} width={450} height={350} />
         </StyledA>
@@ -23,7 +23,7 @@ const ProjectItem = ({ title, description, tags, demo, github, image }) => {
             href={demo}
             target="_blank"
             rel="noreferrer noopener"
-            aria-details="demo-link"
+            aria-describedby="demo-link"
           >
             <RiExternalLinkFill />
           </Links>
@@ -31,7 +31,7 @@ const ProjectItem = ({ title, description, tags, demo, github, image }) => {
             href={github}
             target="_blank"
             rel="noreferrer noopener"
-            aria-details="github-link"
+            aria-describedby="github-link"
           >
             <AiOutlineGithub />
           </Links>

@@ -8,13 +8,29 @@ const MobileSocial = () => {
   return (
     <Ul>
       <Li>
-        <AiOutlineGithub />
+        <a
+          href="https://github.com/Sagi23"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-describedby="linkedin-link"
+        >
+          <AiOutlineGithub />
+        </a>
       </Li>
       <Li>
-        <FaLinkedinIn />
+        <a
+          href="https://www.linkedin.com/in/sagi-twig/"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-describedby="linkedin-link"
+        >
+          <FaLinkedinIn />
+        </a>
       </Li>
       <Li>
-        <IoIosMail />
+        <a href="#contact">
+          <IoIosMail />
+        </a>
       </Li>
     </Ul>
   );

@@ -24,6 +24,7 @@ export default function Home() {
           name="Description"
           content="Portfolio web site front end developer"
         />
+        <meta name="keywords" content="HTML,CSS,React,JavaScript" />
         <html lang="en" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
