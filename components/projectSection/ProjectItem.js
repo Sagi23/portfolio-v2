@@ -66,7 +66,6 @@ const DetailContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: right;
-  gap: 3rem;
   @media ${mediaQueries.mid} {
     position: relative;
     width: 100%;
@@ -79,6 +78,7 @@ const DescriptionContainer = styled.div`
   border-radius: 10px;
   background-color: ${({ theme }) => theme.descriptionColor};
   box-shadow: -2px 2px 15px 4px rgba(0, 0, 0, 0.35);
+  margin: 3rem 0;
 `;
 
 const Description = styled.p`
@@ -143,7 +143,7 @@ const TagsContainer = styled.div`
 
 const Tags = styled.p`
   text-align: right;
-  margin: 0 0rem 0 1.5rem;
+  margin-left: 1rem;
 `;
 
 export default ProjectItem;
