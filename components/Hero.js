@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import Typewriter from "typewriter-effect";
 import { gsap } from "gsap";
 import styled from "styled-components";
 
 const Hero = () => {
-  const tweenWords = useRef(null);
-  const contain = useRef(null);
   const scroller = useRef(null);
 
   useEffect(() => {
@@ -15,9 +14,26 @@ const Hero = () => {
   }, []);
 
   return (
-    <Container ref={contain}>
+    <Container>
       <Ibuild>I Build</Ibuild>
-      <CangingWords ref={tweenWords}>Reliable</CangingWords>
+      <CangingWords>
+        <Typewriter
+          options={{ loop: true }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Reliable")
+              .pauseFor(2500)
+              .deleteAll()
+              .typeString("Beautiful")
+              .pauseFor(2500)
+              .deleteAll()
+              .typeString("Performant")
+              .pauseFor(2500)
+              .deleteAll()
+              .start();
+          }}
+        />
+      </CangingWords>
       <WebApp>Web Applications</WebApp>
       <ScroolDown ref={scroller}>
         <BsChevronDoubleDown />
@@ -25,6 +41,13 @@ const Hero = () => {
     </Container>
   );
 };
+
+const WebApp = styled.p`
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: end;
+  font-size: 5vw;
+`;
 
 const Container = styled.div`
   display: flex;
@@ -42,13 +65,6 @@ const ScroolDown = styled.div`
   font-size: 50px;
 `;
 
-const WebApp = styled.p`
-  font-weight: 700;
-  font-size: 6rem;
-  text-align: end;
-  font-size: 5vw;
-`;
-
 const Ibuild = styled.p`
   font-size: 6rem;
   margin-bottom: 3rem;
@@ -61,6 +77,7 @@ const CangingWords = styled.p`
   text-align: center;
   margin-bottom: 3rem;
   font-size: 10vw;
+  color: ${({ theme }) => theme.headerColor};
 `;
 
 export default Hero;
