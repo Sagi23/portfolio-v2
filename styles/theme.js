@@ -4,16 +4,19 @@ export const lightTheme = {
   body: "#ffffff",
   fontColor: "#313131",
   headerColor: "#34729d",
+  descriptionColor: "#ffffff",
 };
 export const darkTheme = {
   body: "#171f24",
   fontColor: "#e0e0e0",
   headerColor: "#449ddb",
+  descriptionColor: "#1b2a35",
 };
 
 export const mediaQueries = {
   md: `(max-width: 900px)`,
   lg: `(min-width: 900px)`,
+  mid: `(max-width: 1599px)`,
 };
 
 export const displayin = {
@@ -47,5 +50,6 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 `;

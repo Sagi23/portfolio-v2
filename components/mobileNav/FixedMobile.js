@@ -64,6 +64,7 @@ const Container = styled.div`
   position: fixed;
   right: 0;
   top: 0;
+  z-index: 55;
   @media ${mediaQueries.lg} {
     display: none;
   }
