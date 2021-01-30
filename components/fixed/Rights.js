@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Tween } from "react-gsap";
 
-const Rights = () => {
+const Rights = ({ opacity }) => {
+  const FixedLine = styled.div`
+    background-color: ${({ theme }) => theme.fontColor};
+    height: 1px;
+    position: fixed;
+    bottom: 3.6rem;
+    left: 0;
+    width: 220px;
+    display: ${opacity};
+    transition: opacity 2s;
+  `;
+
+  const CopyrightsText = styled.p`
+    display: ${opacity};
+    &:hover {
+      color: #449ddb;
+    }
+  `;
+
   return (
     <CopyrightsContainer>
       <CopyrightsTextContainer>
@@ -17,15 +35,6 @@ const Rights = () => {
   );
 };
 
-const FixedLine = styled.div`
-  background-color: ${({ theme }) => theme.fontColor};
-  height: 1px;
-  position: fixed;
-  bottom: 3.6rem;
-  left: 0;
-  width: 220px;
-`;
-
 const CopyrightsTextContainer = styled.div`
   width: 9.1rem;
   text-align: center;
@@ -37,12 +46,6 @@ const CopyrightsContainer = styled.div`
   width: 90%;
   bottom: 2.5rem;
   left: 15rem;
-`;
-
-const CopyrightsText = styled.p`
-  &:hover {
-    color: #449ddb;
-  }
 `;
 
 export default Rights;

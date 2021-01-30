@@ -3,7 +3,25 @@ import { AiOutlineCloudUpload } from "react-icons/ai";
 import styled from "styled-components";
 import { Tween } from "react-gsap";
 
-const Navbar = () => {
+const Navbar = ({ opacity }) => {
+  const FixedLine = styled.div`
+    background-color: ${({ theme }) => theme.fontColor};
+    height: 1px;
+    width: 350px;
+    position: fixed;
+    top: 3.2rem;
+    right: 0;
+    overflow: hidden;
+    display: ${opacity};
+  `;
+
+  const Ul = styled.ul`
+    position: relative;
+    list-style: none;
+    gap: 3rem;
+    display: ${opacity};
+  `;
+
   return (
     <Container>
       <Tween from={{ x: "200px" }} delay={0.5} opacity={0} duration={0.2}>
@@ -39,19 +57,14 @@ const Navbar = () => {
   );
 };
 
-const FixedLine = styled.div`
-  background-color: ${({ theme }) => theme.fontColor};
-  height: 1px;
-  width: 350px;
-  position: fixed;
-  top: 3.2rem;
-  right: 0;
-  overflow: hidden;
-`;
-
 const StyledDiv = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const Container = styled.div`
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const NavbarContainer = styled.div`
@@ -62,10 +75,6 @@ const NavbarContainer = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-`;
-const Container = styled.div`
-  display: flex;
-  justify-content: flex-end;
 `;
 
 const Ul = styled.ul`

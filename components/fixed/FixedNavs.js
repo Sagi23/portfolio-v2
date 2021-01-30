@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import DarkToggle from "./DarkToggle";
 import Navbar from "./Navbar";
 import Rights from "./Rights";
@@ -7,11 +7,29 @@ import { mediaQueries } from "../../styles/theme";
 import styled from "styled-components";
 
 const FixedNavs = ({ themeToggler, theme }) => {
+  const [opacity, setOpacity] = useState("flex");
+
+  let lastScrollTop = 0;
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      if (typeof window !== "undefined") {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          setOpacity("none");
+        } else {
+          setOpacity("flex");
+        }
+        lastScrollTop = scrollTop;
+      }
+    });
+  }, [lastScrollTop]);
+
   return (
     <StyledDiv>
       <DarkToggle themeToggler={themeToggler} theme={theme} />
-      <Navbar />
-      <Rights />
+      <Navbar opacity={opacity} />
+      <Rights opacity={opacity} />
       <SocialLinks />
     </StyledDiv>
   );
