@@ -10,14 +10,29 @@ const ProjectItem = ({ title, description, tags, demo, github, image }) => {
   return (
     <Container>
       <ImgContainer>
-        <StyledA href={demo} target="_blank">
+        <StyledA
+          href={demo}
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-details="demo-link"
+        >
           <Image src={image} alt={title} width={450} height={350} />
         </StyledA>
         <StyledDiv>
-          <Links href={demo} target="_blank">
+          <Links
+            href={demo}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-details="demo-link"
+          >
             <RiExternalLinkFill />
           </Links>
-          <Links href={github} target="_blank">
+          <Links
+            href={github}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-details="github-link"
+          >
             <AiOutlineGithub />
           </Links>
         </StyledDiv>

@@ -19,7 +19,12 @@ export default function Home() {
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyles />
       <Head>
-        <title>Create Next App</title>
+        <title>Portfolio | Sagi Twig</title>
+        <meta
+          name="Description"
+          content="Portfolio web site front end developer"
+        />
+        <html lang="en" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FixedNavs themeToggler={themeToggler} theme={theme} />
