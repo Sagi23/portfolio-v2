@@ -33,8 +33,8 @@ const Hero = () => {
               .start();
           }}
         />
+        <StyledP>Web Applications</StyledP>
       </CangingWords>
-      <StyledP>Web Applications</StyledP>
       <ScroolDown ref={scroller}>
         <BsChevronDoubleDown />
       </ScroolDown>
@@ -42,18 +42,13 @@ const Hero = () => {
   );
 };
 
-const Webapp = styled.p`
-  font-weight: 700;
-  font-size: 6rem;
-  text-align: end;
-  font-size: 5vw;
-`;
-
 const StyledP = styled.p`
   font-weight: 700;
   font-size: 6rem;
   text-align: end;
   font-size: 5vw;
+  margin-top: 3rem;
+  color: ${({ theme }) => theme.fontColor};
 `;
 
 const Container = styled.div`
