@@ -60,10 +60,10 @@ const HeadBlue = styled.span`
 
 const Container = styled.div`
   width: 60%;
-  margin: 10rem auto 4rem;
+  margin: 7rem auto 4rem;
   @media ${mediaQueries.mid} {
     width: 70%;
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
 `;
 
