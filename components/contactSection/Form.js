@@ -4,18 +4,24 @@ import { mediaQueries } from "../../styles/theme";
 
 const Form = () => {
   return (
-    <Container>
+    <Container id="contact">
       <HeadTitle>
         <HeadBlue>03.</HeadBlue> Contact Me
       </HeadTitle>
+      <SummaryContainer>
+        <Summary>
+          Whether you have any questionor just want to say hi, Feel free to
+          contact me, I will get back to you as soon as possible!
+        </Summary>
+      </SummaryContainer>
       <StyledForm
         id="my-form"
         action="https://formspree.io/f/mnqobyjp"
         method="POST"
       >
-        <StyledLabel for="email">Email:</StyledLabel>
+        <StyledLabel htmlFor="email">Email:</StyledLabel>
         <input type="email" name="email" id="email" required />
-        <StyledLabel for="massage">Message:</StyledLabel>
+        <StyledLabel htmlFor="massage">Message:</StyledLabel>
         <textarea
           name="massage"
           id="massage"
@@ -78,6 +84,21 @@ const StyledButton = styled.button`
     color: ${({ theme }) => theme.body};
     transition: all 0.3s;
   }
+`;
+
+const SummaryContainer = styled.div`
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid ${({ theme }) => theme.headerColor};
+  width: 50%;
+  margin: 0 auto;
+  @media ${mediaQueries.md} {
+    width: 100%;
+  }
+`;
+
+const Summary = styled.p`
+  font-size: 20px;
+  line-height: 1.5;
 `;
 
 export default Form;
