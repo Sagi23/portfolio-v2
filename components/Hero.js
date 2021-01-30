@@ -16,25 +16,28 @@ const Hero = () => {
   return (
     <Container>
       <Ibuild>I Build</Ibuild>
+
       <CangingWords>
-        <Typewriter
-          options={{ loop: true }}
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("Reliable")
-              .pauseFor(2500)
-              .deleteAll()
-              .typeString("Beautiful")
-              .pauseFor(2500)
-              .deleteAll()
-              .typeString("Performant")
-              .pauseFor(2500)
-              .deleteAll()
-              .start();
-          }}
-        />
-        <StyledP>Web Applications</StyledP>
+        <div>
+          <Typewriter
+            options={{ loop: true }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Reliable")
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString("Beautiful")
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString("Performant")
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+            }}
+          />
+        </div>
       </CangingWords>
+      <StyledP>Web Applications</StyledP>
       <ScroolDown ref={scroller}>
         <BsChevronDoubleDown />
       </ScroolDown>
