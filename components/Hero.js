@@ -1,6 +1,6 @@
+import Typewriter from "typewriter-effect";
 import React, { useEffect, useRef } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
-import Typewriter from "typewriter-effect";
 import { gsap } from "gsap";
 import styled from "styled-components";
 
@@ -16,36 +16,33 @@ const Hero = () => {
   return (
     <Container>
       <Ibuild>I Build</Ibuild>
-
       <CangingWords>
-        <div>
-          <Typewriter
-            options={{ loop: true }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Reliable")
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString("Beautiful")
-                .pauseFor(2500)
-                .deleteAll()
-                .typeString("Performant")
-                .pauseFor(2500)
-                .deleteAll()
-                .start();
-            }}
-          />
-        </div>
+        <Typewriter
+          options={{ loop: true }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Reliable")
+              .pauseFor(2500)
+              .deleteAll()
+              .typeString("Beautiful")
+              .pauseFor(2500)
+              .deleteAll()
+              .typeString("Performant")
+              .pauseFor(2500)
+              .deleteAll()
+              .start();
+          }}
+        />
+        <WebApp>Web Applications</WebApp>
+        <ScroolDown ref={scroller}>
+          <BsChevronDoubleDown />
+        </ScroolDown>
       </CangingWords>
-      <StyledP>Web Applications</StyledP>
-      <ScroolDown ref={scroller}>
-        <BsChevronDoubleDown />
-      </ScroolDown>
     </Container>
   );
 };
 
-const StyledP = styled.p`
+const WebApp = styled.p`
   font-weight: 700;
   font-size: 6rem;
   text-align: end;
