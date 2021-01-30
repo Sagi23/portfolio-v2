@@ -10,7 +10,7 @@ const Form = () => {
       </HeadTitle>
       <SummaryContainer>
         <Summary>
-          Whether you have any questionor just want to say hi, Feel free to
+          Whether you have any question or just want to say hi, Feel free to
           contact me, I will get back to you as soon as possible!
         </Summary>
       </SummaryContainer>

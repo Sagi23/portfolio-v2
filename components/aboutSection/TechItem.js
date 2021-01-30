@@ -5,7 +5,7 @@ import styled from "styled-components";
 const TechItem = ({ title, image }) => {
   return (
     <StyledDiv>
-      <Image src={image} alt={title} width={"70px"} height={"70px"} />
+      <Image src={image} alt={title} width={70} height={70} />
       <p style={{ maxWidth: "70px" }}>{title}</p>
     </StyledDiv>
   );
@@ -16,7 +16,7 @@ const StyledDiv = styled.div`
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
+  margin: 0.5rem;
 `;
 
 export default TechItem;

@@ -4,6 +4,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import { gsap } from "gsap";
 import styled from "styled-components";
 import { Tween } from "react-gsap";
+import { mediaQueries } from "../styles/theme";
 
 const Hero = () => {
   const scroller = useRef(null);
@@ -70,6 +71,9 @@ const ScroolDown = styled.div`
   bottom: 0;
   left: 48%;
   font-size: 50px;
+  @media ${mediaQueries.md} {
+    left: 45%;
+  }
 `;
 
 const Ibuild = styled.p`

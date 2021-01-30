@@ -70,7 +70,7 @@ const DetailContainer = styled.div`
   @media ${mediaQueries.mid} {
     position: relative;
     width: 100%;
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
 `;
 
@@ -133,7 +133,6 @@ const StyledDiv = styled.div`
 
 const TagsContainer = styled.div`
   display: flex;
-  gap: 1rem;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -144,6 +143,7 @@ const TagsContainer = styled.div`
 
 const Tags = styled.p`
   text-align: right;
+  margin: 0 0rem 0 1.5rem;
 `;
 
 export default ProjectItem;
