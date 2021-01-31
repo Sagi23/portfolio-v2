@@ -16,8 +16,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <Tween opacity={0} delay={3}>
-      <Container>
+    <Container>
+      <Tween opacity={0} delay={3}>
         <Ibuild>I Build</Ibuild>
         <CangingWords>
           <Typewriter
@@ -43,8 +43,8 @@ const Hero = () => {
             </a>
           </ScroolDown>
         </CangingWords>
-      </Container>
-    </Tween>
+      </Tween>
+    </Container>
   );
 };
 
