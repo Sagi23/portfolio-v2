@@ -11,7 +11,7 @@ const ProjectItem = ({ title, description, tags, demo, github, image }) => {
     <Container>
       <ImgContainer>
         <StyledA href={demo} target="_blank" rel="noreferrer noopener">
-          <Image src={image} alt={title} width={450} height={350} />
+          <Image src={image} alt={title} width={640} height={470} />
         </StyledA>
         <StyledDiv>
           <Links href={demo} target="_blank" rel="noreferrer noopener">
