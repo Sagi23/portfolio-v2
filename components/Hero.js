@@ -55,6 +55,9 @@ const WebApp = styled.p`
   font-size: 5vw;
   margin-top: 3rem;
   color: ${({ theme }) => theme.fontColor};
+  @media ${mediaQueries.md} {
+    font-size: 8vw;
+  }
 `;
 
 const Container = styled.div`
@@ -81,6 +84,9 @@ const Ibuild = styled.p`
   margin-bottom: 3rem;
   font-weight: 700;
   font-size: 5vw;
+  @media ${mediaQueries.md} {
+    font-size: 8vw;
+  }
 `;
 
 const CangingWords = styled.p`
@@ -89,6 +95,9 @@ const CangingWords = styled.p`
   margin-bottom: 3rem;
   font-size: 10vw;
   color: ${({ theme }) => theme.headerColor};
+  @media ${mediaQueries.md} {
+    font-size: 12vw;
+  }
 `;
 
 export default Hero;

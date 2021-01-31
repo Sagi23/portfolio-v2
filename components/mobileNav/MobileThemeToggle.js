@@ -16,7 +16,7 @@ const SunIcon = styled.div`
   justify-content: center;
   align-items: center;
   color: ${({ theme }) => theme.body};
-  margin: 1rem 0 3rem;
+  margin: 3rem 0;
   &:hover {
     cursor: pointer;
     color: ${({ theme }) => theme.headerColor};

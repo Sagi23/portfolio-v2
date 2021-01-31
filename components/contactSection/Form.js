@@ -99,6 +99,9 @@ const SummaryContainer = styled.div`
 const Summary = styled.p`
   font-size: 20px;
   line-height: 1.5;
+  @media ${mediaQueries.md} {
+    font-size: 18px;
+  }
 `;
 
 export default Form;

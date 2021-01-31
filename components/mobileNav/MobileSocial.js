@@ -35,7 +35,7 @@ const MobileSocial = () => {
 };
 
 const Li = styled.li`
-  margin-top: 4rem;
+  margin: 3rem 1.5rem 0;
   color: ${({ theme }) => theme.body};
   &:hover {
     color: #449ddb;
@@ -48,6 +48,5 @@ const Ul = styled.ul`
   justify-content: center;
   list-style: none;
   font-size: 25px;
-  gap: 3rem;
 `;
 export default MobileSocial;

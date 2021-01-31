@@ -39,11 +39,13 @@ const Ul = styled.ul`
   position: relative;
   list-style: none;
   display: flex;
-  gap: 3rem;
+  margin: 1.5rem 0;
   flex-direction: column;
 `;
 
 const Li = styled.li`
+  margin: 1rem 0;
+
   &:hover {
     color: #449ddb;
   }

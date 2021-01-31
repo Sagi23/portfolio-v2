@@ -88,6 +88,9 @@ const Description = styled.p`
   @media ${mediaQueries.mid} {
     text-align: center;
   }
+  @media ${mediaQueries.md} {
+    font-size: 18px;
+  }
 `;
 
 const StyledA = styled.a`
