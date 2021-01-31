@@ -46,6 +46,7 @@ const Container = styled.div`
   margin: 5rem 0;
   @media ${mediaQueries.mid} {
     flex-direction: column;
+    margin: 3rem 0;
   }
 `;
 

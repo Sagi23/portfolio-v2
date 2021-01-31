@@ -2,6 +2,7 @@ const techData = [
   { id: 1, title: "React", image: "/react.svg" },
   { id: 2, title: "Redux", image: "/redux.svg" },
   { id: 3, title: "Next", image: "/nextjs.svg" },
+  { id: 15, title: "Gatsby", image: "/gatsby.svg" },
   { id: 4, title: "Html", image: "/html-5.svg" },
   { id: 5, title: "Css", image: "/css.svg" },
   { id: 6, title: "Sass", image: "/sass.svg" },
