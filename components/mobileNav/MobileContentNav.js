@@ -22,7 +22,7 @@ const MobileContentNav = () => {
           <Num>
             <AiOutlineCloudUpload />.
           </Num>
-          <a href="#"> Resume</a>
+          <a href="/resume.pdf"> Resume</a>
         </Li>
       </Ul>
     </StyledDiv>
